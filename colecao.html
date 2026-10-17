@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Coleção | SUA MARCA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <nav class="nav-esquerda">
+      <a href="index.html">Início</a>
+      <a href="colecao.html" class="ativo">Coleção</a>
+      <a href="index.html#duvidas">Dúvidas</a>
+    </nav>
+
+    <a class="logo" href="index.html">SUA MARCA</a>
+
+    <div class="nav-direita">
+      <a href="index.html#contato">Contato</a>
+      <a class="instagram-topo" href="#" id="instagramTopo" target="_blank" rel="noopener">Instagram</a>
+      <button class="carrinho-btn" id="abrirCarrinho" aria-label="Abrir carrinho">
+        <span class="carrinho-icone">🛒</span>
+        <span class="carrinho-contador" id="carrinhoContador">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagina-colecao">
+      <div class="pagina-colecao-topo">
+        <span class="sobretitulo">Catálogo</span>
+        <h1>Nossa Coleção</h1>
+        <p>Escolha as peças e adicione ao carrinho</p>
+      </div>
+
+      <div class="filtros" id="filtros">
+        <button class="filtro ativo" data-categoria="Todas">Todas</button>
+        <button class="filtro" data-categoria="Colares">Colares</button>
+        <button class="filtro" data-categoria="Brincos">Brincos</button>
+        <button class="filtro" data-categoria="Anéis">Anéis</button>
+        <button class="filtro" data-categoria="Pulseiras">Pulseiras</button>
+      </div>
+
+      <div class="lista-produtos" id="produtos"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-conteudo">
+      <a class="logo" href="index.html">SUA MARCA</a>
+      <p>Beleza que resiste ao tempo.</p>
+      <small>© <span id="ano"></span> SUA MARCA</small>
+    </div>
+  </footer>
+
+    <!-- MODAL PRODUTO -->
+  <div class="modal" id="modalProduto" hidden>
+    <div class="modal-fundo" id="fecharModalFundo"></div>
+    <div class="modal-conteudo">
+      <button class="modal-fechar" id="fecharModal">×</button>
+      
+      <div class="modal-imagem">
+        <img id="modalImg" src="" alt="">
+      </div>
+
+      <div class="modal-info">
+        <span class="tag" id="modalCategoria"></span>
+        <h3 id="modalNome"></h3>
+        <p class="modal-descricao" id="modalDescricao"></p>
+        <p class="modal-preco" id="modalPreco"></p>
+
+        <div class="tamanhos" id="modalTamanhos" hidden>
+          <span class="tamanhos-titulo">Escolha o tamanho:</span>
+          <div class="tamanhos-lista" id="listaTamanhos"></div>
+        </div>
+
+        <button class="botao" id="modalAdicionar" disabled>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARRINHO -->
+  <div class="carrinho-painel" id="carrinhoPainel">
+    <div class="carrinho-cabecalho">
+      <h3>Carrinho</h3>
+      <button class="modal-fechar" id="fecharCarrinho">×</button>
+    </div>
+    <div class="carrinho-itens" id="carrinhoItens"></div>
+    <div class="carrinho-rodape">
+      <div class="carrinho-total">
+        <span>Total</span>
+        <strong id="carrinhoTotal">R$ 0,00</strong>
+      </div>
+      <button class="botao" id="fazerPedido" disabled>Fazer pedido</button>
+      <p class="carrinho-obs">Enviaremos o pedido pelo WhatsApp para combinarmos os detalhes.</p>
+    </div>
+  </div>
+  <div class="carrinho-fundo" id="carrinhoFundo"></div>
+</body>
+</html>
