@@ -18,7 +18,7 @@ const produtos = [
     preco: 30.00,
     descricao: "Anel em aço inox com banho dourado e detalhe de coração. Delicado, resistente e cheio de charme.",
     descricaoCurta: "Anel com coração dourado em aço inox",
-    imagem: "imagens/anel-coracao.png",
+    imagem: "imagens/Anel-coracao.png",
     tamanhos: ["13", "16", "28", "30",]
   },
 
@@ -30,7 +30,7 @@ const produtos = [
     preco: 30.00,
     descricao: "Anel delicado em aço inoxidável com banho dourado, destaque para o detalhe de um coração sólido.",
     descricaoCurta: "Anel com coração único, dourado em aço inox",
-    imagem: "imagens/aneldecoracaounico.JPG",
+    imagem: "imagens/aneldecoracaounico.jpg",
     tamanhos: ["22", "25",]
   }
 ];
