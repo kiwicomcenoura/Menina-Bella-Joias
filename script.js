@@ -32,6 +32,16 @@ const produtos = [
     descricaoCurta: "Anel com coração único, dourado em aço inox",
     imagem: "imagens/aneldecoracaounico.jpg",
     tamanhos: ["22", "25",]
+  },
+  {
+    id: "A002",
+    nome: "Anel Solitário Coração",
+    categoria: "Anéis",
+    preco: 35.00,
+    descricao: "Delicado e romântico, este lindo anel dourado possui uma pedra brilhante em formato de coração, trazendo charme e elegância para qualquer ocasião. Perfeito para presentear alguém especial!",
+    descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
+    imagem: "imagens/anel-solitario-com-pedra.jpg",
+    tamanhos: ["13", "25",]
   }
 ];
 
