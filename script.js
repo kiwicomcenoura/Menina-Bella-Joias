@@ -34,7 +34,7 @@ const produtos = [
     tamanhos: ["22", "25",]
   },
   {
-    id: "A002",
+    id: "A003",
     nome: "Anel Solitário Coração",
     categoria: "Anéis",
     preco: 35.00,
