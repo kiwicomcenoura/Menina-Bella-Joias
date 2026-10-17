@@ -31,7 +31,7 @@ const produtos = [
     descricao: "Anel delicado em aço inoxidável com banho dourado, destaque para o detalhe de um coração sólido.",
     descricaoCurta: "Anel com coração único, dourado em aço inox",
     imagem: "imagens/aneldecoracaounico.jpg",
-    tamanhos: ["22", "25",]
+    tamanhos: ["13","22", "25",]
   },
   {
     id: "A003",
@@ -51,7 +51,27 @@ const produtos = [
     descricao: "Delicado, elegante e cheio de charme! Este lindo anel dourado possui uma fileira de pedrinhas brilhantes que proporcionam um toque de sofisticação e romantismo. Perfeito para usar sozinho ou combinar com outras alianças, valorizando qualquer look e ocasião. ",
     descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
     imagem: "imagens/anel-aparador.png",
-    tamanhos: ["12", "14",]
+    tamanhos: ["12", "14","20",]
+  },
+  {
+    id: "A005",
+    nome: "Anel Sinete Dourado",
+    categoria: "Anéis",
+    preco: 30.00,
+    descricao: "Moderno, elegante e cheio de personalidade! Este lindo anel sinete dourado possui um design liso com acabamento sofisticado, perfeito para quem busca uma joia minimalista e marcante. Ideal para usar sozinho ou combinar com outros acessórios, trazendo charme e estilo para qualquer look.",
+    descricaoCurta: "Anel sinete dourado em estilo minimalista, feito em aço Inox com design liso e elegante, perfeito para complementar qualquer look.",
+    imagem: "imagens/anel-sinete.png",
+    tamanhos: ["13", "16",]
+  },
+  {
+    id: "A006",
+    nome: "Anel Vasado Dourado com Pedras",
+    categoria: "Anéis",
+    preco: 35.00,
+    descricao: "Delicada e elegante, esta linda aliança dourada possui detalhes vazados e uma fileira de pedrinhas brilhantes, trazendo charme e sofisticação na medida certa. Perfeita para complementar seu visual com um toque romântico e delicado.",
+    descricaoCurta: "Aliança dourada com detalhes vazados e pedrinhas brilhantes, delicada e cheia de charme para qualquer ocasião.",
+    imagem: "imagens/anel-vasado-com-pedras.png",
+    tamanhos: ["13",]
   }
 ];
 
