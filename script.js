@@ -42,6 +42,16 @@ const produtos = [
     descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
     imagem: "imagens/anel-solitario-com-pedra.png",
     tamanhos: ["13", "25",]
+  },
+   {
+    id: "A004",
+    nome: "Anel Aparador Dourado com Pedras",
+    categoria: "Anéis",
+    preco: 35.00,
+    descricao: "Delicado, elegante e cheio de charme! Este lindo anel dourado possui uma fileira de pedrinhas brilhantes que proporcionam um toque de sofisticação e romantismo. Perfeito para usar sozinho ou combinar com outras alianças, valorizando qualquer look e ocasião. ",
+    descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
+    imagem: "imagens/anel-aparador.png",
+    tamanhos: ["12", "14",]
   }
 ];
 
