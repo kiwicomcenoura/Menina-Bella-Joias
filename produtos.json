@@ -191,5 +191,18 @@
     "descricaoCurta": "Kit com 2 anéis dourados, sendo um liso e outro com pedrinhas brilhantes. Elegância e delicadeza em uma combinação perfeita!",
     "descricao": "Elegante e sofisticado, este lindo kit contém 2 anéis dourados: um modelo liso com acabamento brilhante e outro delicadamente cravejado com pedrinhas que proporcionam um toque especial de brilho. Perfeitos para usar juntos ou separadamente, combinando charme e versatilidade para qualquer ocasião.",
     "imagem": "imagens/kit-2-anéis.png"
+  },
+  {
+    "id": "A016",
+    "preco": 30.0,
+    "nome": "Anel Prateado com Coração Vazado",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "24",
+      "26"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com coração vazado. Delicado, resistente e elegante, perfeito para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel em aço inoxidável possui um coração vazado em destaque, trazendo charme e elegância ao seu visual. Com acabamento prateado e design minimalista, é uma peça versátil, resistente e perfeita para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/e2b0da62-beb7-4e01-b4af-fcb397c424e4.png"
   }
 ]
