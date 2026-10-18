@@ -67,7 +67,7 @@ const produtos = [
     id: "A006",
     nome: "Anel Vasado Dourado com Pedras",
     categoria: "Anéis",
-    preco: 36.00,
+    preco: 35.00,
     descricao: "Delicada e elegante, esta linda aliança dourada possui detalhes vazados e uma fileira de pedrinhas brilhantes, trazendo charme e sofisticação na medida certa. Perfeita para complementar seu visual com um toque romântico e delicado.",
     descricaoCurta: "Aliança dourada com detalhes vazados e pedrinhas brilhantes, delicada e cheia de charme para qualquer ocasião.",
     imagem: "imagens/anel-vasado-com-pedras.png",
