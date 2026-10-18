@@ -454,7 +454,7 @@ function iniciar() {
   }
 
   // Atualiza nome da marca
-  document.querySelectorAll(".logo").forEach(el => {
+  document.querySelectorAll(".logo, .marca").forEach(el => {
     el.textContent = CONFIG.marca;
   });
 

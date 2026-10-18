@@ -35,7 +35,7 @@
         "preco":  35.00,
         "descricao":  "Delicado e romântico, este lindo anel dourado possui uma pedra brilhante em formato de coração, trazendo charme e elegância para qualquer ocasião. Perfeito para presentear alguém especial!",
         "descricaoCurta":  "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
-        "imagem":  "imagens/anel-solitario-com-pedra.png",
+        "imagem":  "imagens/anelsolitariocompedra.png",
         "tamanhos":  [
                          "13",
                          "25"
@@ -84,7 +84,7 @@
         "id":  "A007",
         "nome":  "Anel Dourado com Design de Batimentos Cardíacos",
         "categoria":  "Anéis",
-        "preco":  40.00,
+        "preco":  30.00,
         "descricao":  "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
         "descricaoCurta":  "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
         "imagem":  "imagens/anel-de-coraçao-com-batidas.png",

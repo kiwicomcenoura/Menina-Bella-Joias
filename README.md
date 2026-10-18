@@ -10,14 +10,16 @@ Na pasta principal do projeto, execute com uma instalação do Python 3 com Tkin
 python editor_produtos.py
 ```
 
-Selecione um produto na lista ou clique em **Novo produto**, preencha os campos e clique em **Salvar produto no JSON**. O preço aceita `39,90` ou `39.90`; os tamanhos devem ser separados por vírgulas. **Escolher imagem** copia fotos externas para `imagens` sem sobrescrever arquivos existentes. A lista permite visualizar os dados dos produtos; não há prévia da foto.
+No Windows, também é possível dar dois cliques em `abrir_editor.bat`. O atalho abre o editor a partir desta raiz e também é ignorado pelo Git.
+
+Selecione um produto na lista ou clique em **Novo produto**, preencha os campos e clique em **Salvar produto** (ou Ctrl+S). O preço aceita `39,90` ou `39.90`; os tamanhos devem ser separados por vírgulas. A busca encontra produtos por nome, ID ou categoria. **Escolher imagem** copia fotos externas para `imagens` sem sobrescrever arquivos existentes. A aba **Foto do produto** exibe a prévia; para suportar também JPG e WebP, instale a dependência opcional com `python -m pip install Pillow`. Sem Pillow, a prévia usa os formatos suportados pelo Tkinter, como PNG, e o cadastro continua funcionando para todos os formatos.
 
 Cada salvamento atualiza `produtos.json` e mantém a versão anterior em `produtos.json.bak`. Se o JSON mudar fora da interface, o editor impede o salvamento; reabra o editor para carregar a versão atual. Ao trocar de produto ou fechar, a interface avisa sobre alterações não salvas.
 
 O `.gitignore` exclui o editor, seu backup e arquivos temporários. O editor é local e não será obtido por quem clonar o repositório. Para publicar alterações no catálogo, inclua `produtos.json` e eventuais novas fotos da pasta `imagens` no commit. A interface não faz commits nem envia arquivos para o GitHub.
 
 Site estático em HTML, CSS e JavaScript. A versão principal está na raiz deste repositório: `index.html`, `colecao.html`, `script.js` e `style.css`.
-A subpasta `Site de Joias (VS CODE)` contém uma cópia antiga independente; ela não usa o catálogo da raiz.
+Há uma única versão do site nesta raiz. As fotos ficam em `imagens/` e as configurações do VS Code em `.vscode/`.
 
 ## Abrir o site
 
@@ -62,3 +64,6 @@ O cadastro é feito editando o arquivo: não há formulário administrativo nem 
 - `colecao.html`: estrutura da vitrine.
 - `index.html`: apresentação, perguntas frequentes e contato.
 - `style.css`: aparência e responsividade.
+- `imagens/`: fotos únicas dos produtos; imagens diferentes são preservadas mesmo quando ainda não estão no catálogo.
+- `.vscode/settings.json`: configuração do editor de código.
+- `editor_produtos.py` e `abrir_editor.bat`: ferramentas locais, ignoradas pelo Git.
