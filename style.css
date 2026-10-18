@@ -232,6 +232,12 @@ button {
   gap: 24px;
 }
 
+.catalogo-status {
+  text-align: center;
+  color: var(--cinza);
+  padding: 40px 16px;
+}
+
 .produto-lista {
   display: grid;
   grid-template-columns: 160px 1fr auto;

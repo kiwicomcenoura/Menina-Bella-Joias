@@ -51,7 +51,7 @@ O arquivo contém uma lista de objetos. Exemplo de um produto:
 - `descricao` e `descricaoCurta` são textos opcionais. Sem resumo, o cartão usa a descrição completa.
 - `imagem` aponta para um arquivo relativo à página. Copie a foto para `imagens` e respeite o nome e as letras maiúsculas/minúsculas.
 - `tamanhos` é uma lista opcional de textos. Use `[]` ou omita o campo para peças sem seleção de tamanho.
-- As categorias dos filtros são geradas automaticamente pelos produtos cadastrados. Use a mesma grafia para produtos da mesma categoria.
+- Os filtros Todas, Colares, Brincos, Anéis e Pulseiras permanecem visíveis, mesmo sem produtos. Categorias adicionais são geradas automaticamente pelo JSON. Use a mesma grafia para produtos da mesma categoria.
 - Para remover uma peça da vitrine, remova seu objeto da lista. Uma lista vazia `[]` exibe a mensagem de catálogo vazio.
 
 O site lê e valida o arquivo antes de exibir a coleção. Se o JSON estiver inválido ou não puder ser carregado, mostra uma mensagem com botão para tentar novamente; o console do navegador informa o motivo.

@@ -3,9 +3,15 @@
    ========================= */
 const CONFIG = {
   marca: "Menina Bella Jóias",
+  categorias: ["Colares", "Brincos", "Anéis", "Pulseiras"],
   whatsapp: "5563984737476",   // ← coloque seu número aqui (só números)
   instagram: "menina.bella.joias"        // ← coloque seu @ aqui (sem @)
 };
+
+// Usa a pasta do script como referência, inclusive no subdiretório do GitHub Pages.
+const BASE_URL = new URL(".", document.currentScript?.src || document.baseURI);
+const URL_CATALOGO = new URL("produtos.json", BASE_URL);
+const urlImagem = caminho => new URL(caminho, BASE_URL).href;
 
 /* =========================
    PRODUTOS
@@ -87,13 +93,14 @@ function renderizarFiltros() {
   const container = document.getElementById("filtros");
   if (!container) return;
   container.replaceChildren();
-  const categorias = [...new Set(produtos.map(produto => produto.categoria))];
+  const categorias = [...new Set([...CONFIG.categorias, ...produtos.map(produto => produto.categoria)])];
   [null, ...categorias].forEach(categoria => {
     const botao = document.createElement("button");
     botao.type = "button";
     botao.className = categoria === null ? "filtro ativo" : "filtro";
     botao.dataset.categoria = categoria === null ? "" : categoria;
     botao.textContent = categoria === null ? "Todas" : categoria;
+    botao.setAttribute("aria-pressed", String(categoria === null));
     container.appendChild(botao);
   });
 }
@@ -113,7 +120,7 @@ async function carregarProdutos() {
   grade.setAttribute("aria-busy", "true");
   mostrarStatusCatalogo("Carregando joias...");
   try {
-    const resposta = await fetch("produtos.json", { cache: "no-cache" });
+    const resposta = await fetch(URL_CATALOGO, { cache: "no-cache" });
     if (!resposta.ok) throw new Error(`Não foi possível carregar o catálogo (HTTP ${resposta.status}).`);
     produtos = validarProdutos(await resposta.json());
     renderizarFiltros();
@@ -144,7 +151,7 @@ function criarCartao(produto) {
 
   item.innerHTML = `
     <div class="produto-lista-imagem">
-      <img src="${escaparHTML(produto.imagem)}" alt="${escaparHTML(produto.nome)}" loading="lazy">
+      <img src="${escaparHTML(urlImagem(produto.imagem))}" alt="${escaparHTML(produto.nome)}" loading="lazy">
     </div>
 
     <div class="produto-lista-info">
@@ -186,7 +193,9 @@ function mostrarProdutos(categoria = "") {
     : produtos.filter(p => p.categoria === categoria);
 
   if (lista.length === 0) {
-    grade.innerHTML = `<p style="text-align:center;color:#999;padding:50px 0">Nenhuma joia cadastrada ainda.</p>`;
+    mostrarStatusCatalogo(categoria
+      ? `Ainda não há joias cadastradas em ${categoria}. Veja as outras categorias.`
+      : "Nenhuma joia cadastrada ainda.");
     return;
   }
 
@@ -202,7 +211,10 @@ if (filtros) {
     const botao = e.target.closest("button[data-categoria]");
     if (!botao) return;
 
-    filtros.querySelectorAll(".filtro").forEach(b => b.classList.toggle("ativo", b === botao));
+    filtros.querySelectorAll(".filtro").forEach(b => {
+      b.classList.toggle("ativo", b === botao);
+      b.setAttribute("aria-pressed", String(b === botao));
+    });
     mostrarProdutos(botao.dataset.categoria);
   });
 }
@@ -221,7 +233,7 @@ function abrirModal(produto) {
   produtoAtual = produto;
   tamanhoSelecionado = null;
 
-  document.getElementById("modalImg").src = produto.imagem;
+  document.getElementById("modalImg").src = urlImagem(produto.imagem);
   document.getElementById("modalImg").alt = produto.nome;
   document.getElementById("modalCategoria").textContent = produto.categoria;
   document.getElementById("modalNome").textContent = produto.nome;
@@ -372,7 +384,7 @@ function atualizarCarrinho() {
     const div = document.createElement("div");
     div.className = "carrinho-item";
     div.innerHTML = `
-      <img src="${escaparHTML(item.imagem)}" alt="${escaparHTML(item.nome)}">
+      <img src="${escaparHTML(urlImagem(item.imagem))}" alt="${escaparHTML(item.nome)}">
       <div class="carrinho-item-info">
         <h4>${escaparHTML(item.nome)}</h4>
         <p>${item.quantidade}x ${formatarPreco(item.preco)}</p>
