@@ -104,5 +104,17 @@
     "descricaoCurta": "Anel solitário dourado com pedra brilhante e delicados detalhes em três aros. Elegante, moderno e perfeito para qualquer ocasião!",
     "descricao": "Delicado e sofisticado, este lindo anel solitário dourado possui uma pedra brilhante em destaque e um design moderno com detalhes em três aros. Perfeito para quem busca elegância e charme em qualquer ocasião, seja para presentear alguém especial ou complementar seu visual.",
     "imagem": "imagens/anel-com-pedra-e-parte-vazada.png"
+  },
+  {
+    "id": "A009",
+    "preco": 35.0,
+    "nome": "Anel Dourado Coração Cravejado em Pequenas Pedras",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "15"
+    ],
+    "descricaoCurta": "Anel dourado com coração cravejado de pedrinhas brilhantes. Delicado, romântico e perfeito para qualquer ocasião",
+    "descricao": "Delicado e romântico, este lindo anel dourado possui um coração cravejado com pedrinhas brilhantes, trazendo charme e sofisticação ao seu visual. Com acabamento elegante e design delicado, é perfeito para o dia a dia ou para presentear alguém especial.\n\n**Vendido por unidade.**",
+    "imagem": "imagens/anel-com-coraçao-e-pedra.png"
   }
 ]
