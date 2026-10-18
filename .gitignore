@@ -3,3 +3,4 @@
 /produtos.json.bak
 /.produtos-*.tmp
 __pycache__/
+/.editor-deps/

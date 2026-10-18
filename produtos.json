@@ -92,5 +92,17 @@
       "16",
       "21"
     ]
+  },
+  {
+    "id": "A008",
+    "preco": 35.0,
+    "nome": "Anel Solitário Dourado com Pedra de Zircônia",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "12"
+    ],
+    "descricaoCurta": "Anel solitário dourado com pedra brilhante e delicados detalhes em três aros. Elegante, moderno e perfeito para qualquer ocasião!",
+    "descricao": "Delicado e sofisticado, este lindo anel solitário dourado possui uma pedra brilhante em destaque e um design moderno com detalhes em três aros. Perfeito para quem busca elegância e charme em qualquer ocasião, seja para presentear alguém especial ou complementar seu visual.",
+    "imagem": "imagens/anel-com-pedra-e-parte-vazada.png"
   }
 ]
