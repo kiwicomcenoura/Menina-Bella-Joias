@@ -74,15 +74,15 @@ const produtos = [
     tamanhos: ["13",]
   },
   {
-  id: "A007",
-  nome: "Anel Dourado com Design de Batimentos Cardíacos",
-  categoria: "Anéis",
-  preco: 29.99,
-  descricao: "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
-  descricaoCurta: "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
-  imagem: "imagens/anel-de-coraçao-com-batidas.png",
-  tamanhos: ["16", "21"]
-}
+    id: "A007",
+    nome: "Anel com Detalhe de Coração e Batidas",
+    categoria: "Anéis",
+    preco: 30.00,
+    descricao: "Elegante e cheia de estilo, esta linda aliança dourada possui um design moderno com detalhes vazados em formato de coração, simbolizando amor e carinho. Seu acabamento brilhante realça a beleza da peça, tornando-a perfeita para presentear alguém especial ou complementar seu visual em qualquer ocasião.",
+    descricaoCurta: "Aliança dourada com detalhes vazados em formato de coração, delicada e elegante, perfeita para simbolizar o amor e tornar qualquer momento especial.",
+    imagem: "imagens/anel-com-detalhes-de-batidas.png",
+    tamanhos: ["16", "21",]
+  }
 ];
 
 /* =========================
