@@ -20,7 +20,15 @@ Para remover um produto, selecione-o e clique em **Excluir produto**. Após a co
 
 No editor, o código é automático após escolher a categoria: Anéis → A, Colares → C, Brincos → B e Pulseiras → P. A numeração usa o maior número cadastrado na categoria mais 1 (por exemplo, A003 e A007 geram A008). Uma categoria vazia começa em 001. Ao editar sem trocar de categoria, o código original é mantido; ao mudar a categoria, um código da categoria de destino é gerado. Voltar à categoria original antes de salvar restaura o código original.
 
-O `.gitignore` exclui o editor, seu backup e arquivos temporários. O editor é local e não será obtido por quem clonar o repositório. Para publicar alterações no catálogo, inclua `produtos.json` e eventuais novas fotos da pasta `imagens` no commit. A interface não faz commits nem envia arquivos para o GitHub.
+O `.gitignore` exclui o editor, seu backup e arquivos temporários. O editor é local e não será obtido por quem clonar o repositório.
+
+### Publicar pelo editor
+
+Clique em **Publicar no GitHub**. O editor oferece salvar o formulário pendente, valida o catálogo e as fotos, cria um commit dos arquivos do site e faz push para `origin/main`. O envio ocorre em segundo plano, com mensagens de andamento. O Git deve estar instalado, com nome/e-mail configurados e autenticação no GitHub já funcionando neste computador.
+
+O botão inclui páginas, CSS, JavaScript, JSON, imagens, README, `.gitignore` e o workflow de publicação. O editor, o `.bat` e os backups ficam fora do commit; arquivos preparados de outras pastas não são incluídos nesse novo commit. Commits locais anteriores pendentes também são enviados pelo push. Se houver alterações remotas ainda não integradas, o editor pede para resolver isso pelo VS Code; ele não força o envio nem resolve conflitos automaticamente.
+
+Na primeira publicação, no GitHub, abra **Settings → Pages → Build and deployment → Source** e selecione **GitHub Actions**. O workflow `.github/workflows/pages.yml` publica somente os arquivos públicos do site a cada push para `main`. Se necessário, depois de configurar Pages, inicie **Actions → Publicar site no GitHub Pages → Run workflow**. Acompanhe o resultado na aba Actions. O envio do commit termina antes da atualização do site; a confirmação do editor distingue essas duas etapas.
 
 Site estático em HTML, CSS e JavaScript. A versão principal está na raiz deste repositório: `index.html`, `colecao.html`, `script.js` e `style.css`.
 Há uma única versão do site nesta raiz. As fotos ficam em `imagens/` e as configurações do VS Code em `.vscode/`.

@@ -92,5 +92,17 @@
       "16",
       "21"
     ]
+  },
+  {
+    "id": "B001",
+    "preco": 19.0,
+    "nome": "meu S ta paia",
+    "categoria": "Brincos",
+    "tamanhos": [
+      "18"
+    ],
+    "descricaoCurta": "",
+    "descricao": "...",
+    "imagem": "imagens/cleitin-1.jfif"
   }
 ]
