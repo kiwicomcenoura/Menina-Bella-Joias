@@ -10,80 +10,7 @@ const CONFIG = {
 /* =========================
    PRODUTOS
    ========================= */
-const produtos = [
-  {
-    id: "A001",
-    nome: "Anel de Coração",
-    categoria: "Anéis",
-    preco: 30.00,
-    descricao: "Anel em aço inox com banho dourado e detalhe de coração. Delicado, resistente e cheio de charme.",
-    descricaoCurta: "Anel com coração dourado em aço inox",
-    imagem: "imagens/Anel-coracao.png",
-    tamanhos: ["13", "16", "28", "30",]
-  },
-
-  
-  {
-    id: "A002",
-    nome: "Anel de Coração Unico",
-    categoria: "Anéis",
-    preco: 30.00,
-    descricao: "Anel delicado em aço inoxidável com banho dourado, destaque para o detalhe de um coração sólido.",
-    descricaoCurta: "Anel com coração único, dourado em aço inox",
-    imagem: "imagens/aneldecoracaounico.jpg",
-    tamanhos: ["13","22", "25",]
-  },
-  {
-    id: "A003",
-    nome: "Anel Solitário Coração",
-    categoria: "Anéis",
-    preco: 35.00,
-    descricao: "Delicado e romântico, este lindo anel dourado possui uma pedra brilhante em formato de coração, trazendo charme e elegância para qualquer ocasião. Perfeito para presentear alguém especial!",
-    descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
-    imagem: "imagens/anel-solitario-com-pedra.png",
-    tamanhos: ["13", "25",]
-  },
-   {
-    id: "A004",
-    nome: "Anel Aparador Dourado com Pedras",
-    categoria: "Anéis",
-    preco: 35.00,
-    descricao: "Delicado, elegante e cheio de charme! Este lindo anel dourado possui uma fileira de pedrinhas brilhantes que proporcionam um toque de sofisticação e romantismo. Perfeito para usar sozinho ou combinar com outras alianças, valorizando qualquer look e ocasião. ",
-    descricaoCurta: "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
-    imagem: "imagens/anel-aparador.png",
-    tamanhos: ["12", "14","20",]
-  },
-  {
-    id: "A005",
-    nome: "Anel Sinete Dourado",
-    categoria: "Anéis",
-    preco: 30.00,
-    descricao: "Moderno, elegante e cheio de personalidade! Este lindo anel sinete dourado possui um design liso com acabamento sofisticado, perfeito para quem busca uma joia minimalista e marcante. Ideal para usar sozinho ou combinar com outros acessórios, trazendo charme e estilo para qualquer look.",
-    descricaoCurta: "Anel sinete dourado em estilo minimalista, feito em aço Inox com design liso e elegante, perfeito para complementar qualquer look.",
-    imagem: "imagens/anel-sinete.png",
-    tamanhos: ["13", "16",]
-  },
-  {
-    id: "A006",
-    nome: "Anel Vasado Dourado com Pedras",
-    categoria: "Anéis",
-    preco: 35.00,
-    descricao: "Delicada e elegante, esta linda aliança dourada possui detalhes vazados e uma fileira de pedrinhas brilhantes, trazendo charme e sofisticação na medida certa. Perfeita para complementar seu visual com um toque romântico e delicado.",
-    descricaoCurta: "Aliança dourada com detalhes vazados e pedrinhas brilhantes, delicada e cheia de charme para qualquer ocasião.",
-    imagem: "imagens/anel-vasado-com-pedras.png",
-    tamanhos: ["13",]
-  },
-  {
-  id: "A007",
-  nome: "Anel Dourado com Design de Batimentos Cardíacos",
-  categoria: "Anéis",
-  preco: 40.00,
-  descricao: "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
-  descricaoCurta: "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
-  imagem: "imagens/anel-de-coraçao-com-batidas.png",
-  tamanhos: ["16", "21"]
-}
-];
+let produtos = [];
 
 /* =========================
    PERGUNTAS FREQUENTES
@@ -138,19 +65,92 @@ function linkWhatsApp(mensagem) {
 /* =========================
    RENDERIZAÇÃO DOS PRODUTOS
    ========================= */
+function validarProdutos(dados) {
+  if (!Array.isArray(dados)) throw new Error("O catálogo deve ser uma lista de produtos.");
+  const ids = new Set();
+  dados.forEach((produto, indice) => {
+    const campos = ["id", "nome", "categoria", "imagem"];
+    if (!produto || campos.some(campo => typeof produto[campo] !== "string" || !produto[campo].trim()) ||
+        typeof produto.preco !== "number" || !Number.isFinite(produto.preco) || produto.preco < 0 ||
+        ["descricao", "descricaoCurta"].some(campo => produto[campo] !== undefined && typeof produto[campo] !== "string") ||
+        (produto.tamanhos !== undefined && (!Array.isArray(produto.tamanhos) ||
+          produto.tamanhos.some(tamanho => typeof tamanho !== "string" || !tamanho.trim())))) {
+      throw new Error(`Produto ${indice + 1}: confira os campos do cadastro.`);
+    }
+    if (ids.has(produto.id)) throw new Error(`ID duplicado: ${produto.id}`);
+    ids.add(produto.id);
+  });
+  return dados;
+}
+
+function renderizarFiltros() {
+  const container = document.getElementById("filtros");
+  if (!container) return;
+  container.replaceChildren();
+  const categorias = [...new Set(produtos.map(produto => produto.categoria))];
+  [null, ...categorias].forEach(categoria => {
+    const botao = document.createElement("button");
+    botao.type = "button";
+    botao.className = categoria === null ? "filtro ativo" : "filtro";
+    botao.dataset.categoria = categoria === null ? "" : categoria;
+    botao.textContent = categoria === null ? "Todas" : categoria;
+    container.appendChild(botao);
+  });
+}
+
+function mostrarStatusCatalogo(mensagem, erro = false) {
+  const grade = document.getElementById("produtos");
+  const texto = document.createElement("p");
+  texto.className = "catalogo-status";
+  texto.setAttribute("role", erro ? "alert" : "status");
+  texto.textContent = mensagem;
+  grade.replaceChildren(texto);
+}
+
+async function carregarProdutos() {
+  const grade = document.getElementById("produtos");
+  if (!grade) return;
+  grade.setAttribute("aria-busy", "true");
+  mostrarStatusCatalogo("Carregando joias...");
+  try {
+    const resposta = await fetch("produtos.json", { cache: "no-cache" });
+    if (!resposta.ok) throw new Error(`Não foi possível carregar o catálogo (HTTP ${resposta.status}).`);
+    produtos = validarProdutos(await resposta.json());
+    renderizarFiltros();
+    mostrarProdutos();
+  } catch (erro) {
+    console.error("Erro ao carregar produtos.json:", erro);
+    mostrarStatusCatalogo("Não foi possível carregar as joias. Tente novamente. Se estiver abrindo o arquivo diretamente, use o Live Server do VS Code.", true);
+    const botao = document.createElement("button");
+    botao.type = "button";
+    botao.className = "botao";
+    botao.textContent = "Tentar novamente";
+    botao.addEventListener("click", carregarProdutos);
+    grade.appendChild(botao);
+  } finally {
+    grade.setAttribute("aria-busy", "false");
+  }
+}
+
+function escaparHTML(valor) {
+  return String(valor).replace(/[&<>"']/g, caractere => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[caractere]);
+}
+
 function criarCartao(produto) {
   const item = document.createElement("article");
   item.className = "produto-lista";
 
   item.innerHTML = `
     <div class="produto-lista-imagem">
-      <img src="${produto.imagem}" alt="${produto.nome}" loading="lazy">
+      <img src="${escaparHTML(produto.imagem)}" alt="${escaparHTML(produto.nome)}" loading="lazy">
     </div>
 
     <div class="produto-lista-info">
-      <span class="categoria">${produto.categoria}</span>
-      <h3>${produto.nome}</h3>
-      <p class="descricao">${produto.descricaoCurta || produto.descricao || ""}</p>
+      <span class="categoria">${escaparHTML(produto.categoria)}</span>
+      <h3>${escaparHTML(produto.nome)}</h3>
+      <p class="descricao">${escaparHTML(produto.descricaoCurta || produto.descricao || "")}</p>
     </div>
 
     <div class="produto-lista-acao">
@@ -175,13 +175,13 @@ function criarCartao(produto) {
   return item;
 }
 
-function mostrarProdutos(categoria = "Todas") {
+function mostrarProdutos(categoria = "") {
   const grade = document.getElementById("produtos");
   if (!grade) return;
 
   grade.replaceChildren();
 
-  const lista = categoria === "Todas"
+  const lista = categoria === ""
     ? produtos
     : produtos.filter(p => p.categoria === categoria);
 
@@ -372,11 +372,11 @@ function atualizarCarrinho() {
     const div = document.createElement("div");
     div.className = "carrinho-item";
     div.innerHTML = `
-      <img src="${item.imagem}" alt="${item.nome}">
+      <img src="${escaparHTML(item.imagem)}" alt="${escaparHTML(item.nome)}">
       <div class="carrinho-item-info">
-        <h4>${item.nome}</h4>
+        <h4>${escaparHTML(item.nome)}</h4>
         <p>${item.quantidade}x ${formatarPreco(item.preco)}</p>
-        <button class="carrinho-item-remover" data-id="${item.id}">Remover</button>
+        <button class="carrinho-item-remover" data-id="${escaparHTML(item.id)}">Remover</button>
       </div>
     `;
     listaItens.appendChild(div);
@@ -463,7 +463,7 @@ function iniciar() {
 
   // Produtos (só se existir a div)
   if (document.getElementById("produtos")) {
-    mostrarProdutos();
+    carregarProdutos();
   }
 
   // FAQ (só se existir)

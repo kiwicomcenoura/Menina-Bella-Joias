@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f7f4ef">
   <title>Coleção | SUA MARCA</title>
   <link rel="stylesheet" href="style.css?v=3">
-  <script src="script.js?v=7" defer></script>
+  <script src="script.js?v=8" defer></script>
 </head>
 <body>
   <header class="topo">
@@ -36,15 +36,10 @@
         <p>Escolha as peças e adicione ao carrinho</p>
       </div>
 
-      <div class="filtros" id="filtros">
-        <button class="filtro ativo" data-categoria="Todas">Todas</button>
-        <button class="filtro" data-categoria="Colares">Colares</button>
-        <button class="filtro" data-categoria="Brincos">Brincos</button>
-        <button class="filtro" data-categoria="Anéis">Anéis</button>
-        <button class="filtro" data-categoria="Pulseiras">Pulseiras</button>
-      </div>
+      <div class="filtros" id="filtros" aria-label="Filtrar por categoria"></div>
 
-      <div class="lista-produtos" id="produtos"></div>
+      <noscript>Ative o JavaScript para visualizar o catálogo de joias.</noscript>
+      <div class="lista-produtos" id="produtos" aria-busy="true"></div>
     </section>
   </main>
 

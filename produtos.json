@@ -1,0 +1,96 @@
+[
+    {
+        "id":  "A001",
+        "nome":  "Anel de Coração",
+        "categoria":  "Anéis",
+        "preco":  30.00,
+        "descricao":  "Anel em aço inox com banho dourado e detalhe de coração. Delicado, resistente e cheio de charme.",
+        "descricaoCurta":  "Anel com coração dourado em aço inox",
+        "imagem":  "imagens/Anel-coracao.png",
+        "tamanhos":  [
+                         "13",
+                         "16",
+                         "28",
+                         "30"
+                     ]
+    },
+    {
+        "id":  "A002",
+        "nome":  "Anel de Coração Unico",
+        "categoria":  "Anéis",
+        "preco":  30.00,
+        "descricao":  "Anel delicado em aço inoxidável com banho dourado, destaque para o detalhe de um coração sólido.",
+        "descricaoCurta":  "Anel com coração único, dourado em aço inox",
+        "imagem":  "imagens/aneldecoracaounico.jpg",
+        "tamanhos":  [
+                         "13",
+                         "22",
+                         "25"
+                     ]
+    },
+    {
+        "id":  "A003",
+        "nome":  "Anel Solitário Coração",
+        "categoria":  "Anéis",
+        "preco":  35.00,
+        "descricao":  "Delicado e romântico, este lindo anel dourado possui uma pedra brilhante em formato de coração, trazendo charme e elegância para qualquer ocasião. Perfeito para presentear alguém especial!",
+        "descricaoCurta":  "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
+        "imagem":  "imagens/anel-solitario-com-pedra.png",
+        "tamanhos":  [
+                         "13",
+                         "25"
+                     ]
+    },
+    {
+        "id":  "A004",
+        "nome":  "Anel Aparador Dourado com Pedras",
+        "categoria":  "Anéis",
+        "preco":  35.00,
+        "descricao":  "Delicado, elegante e cheio de charme! Este lindo anel dourado possui uma fileira de pedrinhas brilhantes que proporcionam um toque de sofisticação e romantismo. Perfeito para usar sozinho ou combinar com outras alianças, valorizando qualquer look e ocasião. ",
+        "descricaoCurta":  "Anel com coração único, dourado em aço inox com um detalhe de uma pedra",
+        "imagem":  "imagens/anel-aparador.png",
+        "tamanhos":  [
+                         "12",
+                         "14",
+                         "20"
+                     ]
+    },
+    {
+        "id":  "A005",
+        "nome":  "Anel Sinete Dourado",
+        "categoria":  "Anéis",
+        "preco":  30.00,
+        "descricao":  "Moderno, elegante e cheio de personalidade! Este lindo anel sinete dourado possui um design liso com acabamento sofisticado, perfeito para quem busca uma joia minimalista e marcante. Ideal para usar sozinho ou combinar com outros acessórios, trazendo charme e estilo para qualquer look.",
+        "descricaoCurta":  "Anel sinete dourado em estilo minimalista, feito em aço Inox com design liso e elegante, perfeito para complementar qualquer look.",
+        "imagem":  "imagens/anel-sinete.png",
+        "tamanhos":  [
+                         "13",
+                         "16"
+                     ]
+    },
+    {
+        "id":  "A006",
+        "nome":  "Anel Vasado Dourado com Pedras",
+        "categoria":  "Anéis",
+        "preco":  35.00,
+        "descricao":  "Delicada e elegante, esta linda aliança dourada possui detalhes vazados e uma fileira de pedrinhas brilhantes, trazendo charme e sofisticação na medida certa. Perfeita para complementar seu visual com um toque romântico e delicado.",
+        "descricaoCurta":  "Aliança dourada com detalhes vazados e pedrinhas brilhantes, delicada e cheia de charme para qualquer ocasião.",
+        "imagem":  "imagens/anel-vasado-com-pedras.png",
+        "tamanhos":  [
+                         "13"
+                     ]
+    },
+    {
+        "id":  "A007",
+        "nome":  "Anel Dourado com Design de Batimentos Cardíacos",
+        "categoria":  "Anéis",
+        "preco":  40.00,
+        "descricao":  "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
+        "descricaoCurta":  "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
+        "imagem":  "imagens/anel-de-coraçao-com-batidas.png",
+        "tamanhos":  [
+                         "16",
+                         "21"
+                     ]
+    }
+]
