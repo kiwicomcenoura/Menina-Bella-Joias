@@ -116,5 +116,55 @@
     "descricaoCurta": "Anel dourado com coração cravejado de pedrinhas brilhantes. Delicado, romântico e perfeito para qualquer ocasião",
     "descricao": "Delicado e romântico, este lindo anel dourado possui um coração cravejado com pedrinhas brilhantes, trazendo charme e sofisticação ao seu visual. Com acabamento elegante e design delicado, é perfeito para o dia a dia ou para presentear alguém especial.\n\n**Vendido por unidade.**",
     "imagem": "imagens/anel-com-coraçao-e-pedra.png"
+  },
+  {
+    "id": "A010",
+    "preco": 30.0,
+    "nome": "Anel Dourado Coração Vazado com Aro Duplo",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "13",
+      "26",
+      "27"
+    ],
+    "descricaoCurta": "Anel dourado com coração vazado e aro duplo. Delicado, moderno e romântico, perfeito para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel dourado possui um coração vazado em destaque e um elegante design de aro duplo. Seu acabamento brilhante traz charme e sofisticação, sendo perfeito para complementar qualquer visual ou presentear alguém especial.",
+    "imagem": "imagens/anel-com-coracao-vasado-e-aro-duplo.png"
+  },
+  {
+    "id": "A011",
+    "preco": 30.0,
+    "nome": "Anel Dourado com Corações Vazados",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "21"
+    ],
+    "descricaoCurta": "Anel dourado com delicados corações vazados ao redor do aro. Romântico, elegante e perfeito para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel dourado possui um design vazado com pequenos corações distribuídos ao redor do aro. Seu acabamento brilhante e detalhes encantadores trazem elegância e charme, tornando-o perfeito para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/anel-com-coracoes.png"
+  },
+  {
+    "id": "A012",
+    "preco": 30.0,
+    "nome": "Anel Dourado com Corações Entrelaçados",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "13"
+    ],
+    "descricaoCurta": "Anel dourado com dois corações entrelaçados. Delicado, romântico e cheio de significado, perfeito para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel dourado possui dois corações entrelaçados, simbolizando amor, união e carinho. Com acabamento brilhante e design minimalista, é perfeito para complementar qualquer visual ou presentear alguém especial.",
+    "imagem": "imagens/anel-com-coracoes-entrelacados.png"
+  },
+  {
+    "id": "A013",
+    "preco": 30.0,
+    "nome": "Anel Dourado com Dois Corações Vazados",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "24"
+    ],
+    "descricaoCurta": "Anel dourado com dois corações vazados lado a lado. Delicado, romântico e cheio de charme para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel dourado apresenta dois corações vazados lado a lado, simbolizando amor, carinho e união. Com acabamento brilhante e design moderno, é perfeito para complementar qualquer visual ou presentear alguém especial.",
+    "imagem": "imagens/anel-com-coracao-duplo.png"
   }
 ]
