@@ -77,7 +77,7 @@ const produtos = [
   id: "A007",
   nome: "Anel Dourado com Design de Batimentos Cardíacos",
   categoria: "Anéis",
-  preco: 30.00,
+  preco: 35.00,
   descricao: "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
   descricaoCurta: "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
   imagem: "imagens/anel-de-coraçao-com-batidas.png",
