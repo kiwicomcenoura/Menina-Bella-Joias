@@ -16,6 +16,10 @@ Selecione um produto na lista ou clique em **Novo produto**, preencha os campos 
 
 Cada salvamento atualiza `produtos.json` e mantém a versão anterior em `produtos.json.bak`. Se o JSON mudar fora da interface, o editor impede o salvamento; reabra o editor para carregar a versão atual. Ao trocar de produto ou fechar, a interface avisa sobre alterações não salvas.
 
+Para remover um produto, selecione-o e clique em **Excluir produto**. Após a confirmação, a exclusão é salva imediatamente no JSON, com backup da versão anterior. A foto é preservada na pasta `imagens/`. O botão fica desativado durante um novo cadastro.
+
+No editor, o código é automático após escolher a categoria: Anéis → A, Colares → C, Brincos → B e Pulseiras → P. A numeração usa o maior número cadastrado na categoria mais 1 (por exemplo, A003 e A007 geram A008). Uma categoria vazia começa em 001. Ao editar sem trocar de categoria, o código original é mantido; ao mudar a categoria, um código da categoria de destino é gerado. Voltar à categoria original antes de salvar restaura o código original.
+
 O `.gitignore` exclui o editor, seu backup e arquivos temporários. O editor é local e não será obtido por quem clonar o repositório. Para publicar alterações no catálogo, inclua `produtos.json` e eventuais novas fotos da pasta `imagens` no commit. A interface não faz commits nem envia arquivos para o GitHub.
 
 Site estático em HTML, CSS e JavaScript. A versão principal está na raiz deste repositório: `index.html`, `colecao.html`, `script.js` e `style.css`.

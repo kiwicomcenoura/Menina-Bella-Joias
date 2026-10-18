@@ -92,17 +92,5 @@
       "16",
       "21"
     ]
-  },
-  {
-    "id": "C001",
-    "preco": 999.0,
-    "nome": "Colarzinho",
-    "categoria": "Colares",
-    "tamanhos": [
-      "10"
-    ],
-    "descricaoCurta": "colar de por no pescoço",
-    "descricao": "",
-    "imagem": "imagens/cleitin.jfif"
   }
 ]
