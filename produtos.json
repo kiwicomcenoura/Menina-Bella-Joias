@@ -321,5 +321,89 @@
     "descricaoCurta": "Anel solitário em aço inoxidável prateado com aro triplo e pedra brilhante. Moderno, delicado e perfeito para qualquer ocasião!",
     "descricao": "Elegante e sofisticado, este lindo anel em aço inoxidável prateado possui um design diferenciado com três aros e uma pedra transparente brilhante em destaque. Seu acabamento polido combina delicadeza e modernidade, sendo perfeito para complementar qualquer visual ou presentear alguém especial.",
     "imagem": "imagens/ee7d6871-7f4e-4e0e-8260-811a6e231904.png"
+  },
+  {
+    "id": "A026",
+    "preco": 30.0,
+    "nome": "Anel Batimento Cardíaco com Coração em Aço Inox Prateado",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "12"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com detalhes vazados de batimentos cardíacos e coração. Moderno, resistente e cheio de significado!",
+    "descricao": "Moderno e cheio de significado, este anel em aço inoxidável prateado possui detalhes vazados de batimentos cardíacos e coração, simbolizando amor e vida. Seu aro largo e acabamento brilhante trazem personalidade e elegância, sendo perfeito para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/cc115042-b8fb-49ff-abe3-ba438d854a59.png"
+  },
+  {
+    "id": "A027",
+    "preco": 30.0,
+    "nome": "Anel Dois Corações Vazados Prateados em aço Inox",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "21"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com dois corações vazados. Delicado, resistente e romântico, perfeito para qualquer ocasião!",
+    "descricao": "Delicado e romântico, este lindo anel em aço inoxidável prateado possui dois corações vazados lado a lado, simbolizando amor, carinho e união. Seu acabamento brilhante e design moderno trazem charme e elegância, sendo perfeito para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/3c742ced-0608-4fee-acec-27e2aa46db93.png"
+  },
+  {
+    "id": "A028",
+    "preco": 30.0,
+    "nome": "Aliança em Aço Inox Prateado com Faixa Texturizada",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "20"
+    ],
+    "descricaoCurta": "Aliança em aço inoxidável prateado com centro liso e bordas texturizadas dos dois lados. Moderna, resistente e elegante.",
+    "descricao": "Elegante e sofisticada, esta linda aliança em aço inoxidável prateado possui acabamento liso e brilhante na parte central, combinado com detalhes texturizados nas duas laterais, proporcionando um contraste moderno e delicado. Seu design diferenciado é perfeito para quem busca estilo e elegância.",
+    "imagem": "imagens/31859096-cc76-48bd-a2ca-ff64381a3676.png"
+  },
+  {
+    "id": "A029",
+    "preco": 30.0,
+    "nome": "Anel Espírito Santo em Aço Inox Prateado com Pedrinhas",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "22"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com símbolo do Espírito Santo e pedrinhas brilhantes. Uma peça delicada que representa fé, paz e proteção!",
+    "descricao": "Delicado e cheio de significado, este lindo anel em aço inoxidável prateado possui uma pomba de asas abertas, representando o Espírito Santo, com detalhes de pedrinhas brilhantes. Seu design simboliza fé, paz e proteção, sendo perfeito para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/b4f08a29-b053-4fc9-8ea0-edced092715c.png"
+  },
+  {
+    "id": "A030",
+    "preco": 35.0,
+    "nome": "Anel em Aço Inox Prateado com Pedrinhas e Detalhes Vazados de Coração",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "13"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com pedrinhas brilhantes e detalhes vazados. Delicado, resistente e elegante para qualquer ocasião!",
+    "descricao": "Delicado e elegante, este lindo anel em aço inoxidável prateado possui uma fileira de pedrinhas brilhantes e detalhes vazados de Coração na parte inferior, criando um design moderno e sofisticado. Perfeito para complementar seu visual com charme e delicadeza.",
+    "imagem": "imagens/af2cdfed-749a-449f-a50d-e46e152dc99d.png"
+  },
+  {
+    "id": "A031",
+    "preco": 35.0,
+    "nome": "Anel Solitário Quadrado em Aço Inox Prateado",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "16"
+    ],
+    "descricaoCurta": "Anel solitário em aço inoxidável prateado com pedra brilhante quadrada. Delicado, elegante e perfeito para qualquer ocasião!",
+    "descricao": "Delicado e sofisticado, este lindo anel em aço inoxidável prateado possui uma pedra transparente brilhante com formato quadrado, que proporciona elegância e charme ao visual. Seu aro fino e acabamento polido trazem um toque clássico e moderno, perfeito para qualquer ocasião ou para presentear alguém especial.",
+    "imagem": "imagens/87997c61-4037-4a5d-a978-616709889a48.png"
+  },
+  {
+    "id": "A032",
+    "preco": 30.0,
+    "nome": "Anel em Aço Inox Prateado com Pingente de Coração Vazado",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "15"
+    ],
+    "descricaoCurta": "Anel em aço inoxidável prateado com pingente de coração vazado. Delicado, resistente e romântico.",
+    "descricao": "Delicado e romântico, este lindo anel em aço inoxidável prateado possui um pingente de coração vazado que traz movimento, charme e elegância à peça. Seu aro fino e acabamento brilhante proporcionam um visual moderno e minimalista.",
+    "imagem": "imagens/8b05edbc-d521-41fa-a776-2a55df3631bf.png"
   }
 ]
