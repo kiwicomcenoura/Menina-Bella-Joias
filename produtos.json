@@ -166,5 +166,17 @@
     "descricaoCurta": "Anel dourado com dois corações vazados lado a lado. Delicado, romântico e cheio de charme para qualquer ocasião!",
     "descricao": "Delicado e romântico, este lindo anel dourado apresenta dois corações vazados lado a lado, simbolizando amor, carinho e união. Com acabamento brilhante e design moderno, é perfeito para complementar qualquer visual ou presentear alguém especial.",
     "imagem": "imagens/anel-com-coracao-duplo.png"
+  },
+  {
+    "id": "A014",
+    "preco": 30.0,
+    "nome": "Anel Dourado Nossa Senhora Aparecida",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "22"
+    ],
+    "descricaoCurta": "Anel dourado com imagem de Nossa Senhora Aparecida, um acessório delicado que representa fé, proteção e devoção.",
+    "descricao": "Delicado e cheio de significado, este lindo anel dourado apresenta a imagem de Nossa Senhora Aparecida em destaque, envolvida por um elegante contorno oval. Seu design simboliza fé, proteção e devoção, sendo perfeito para o dia a dia ou para presentear alguém especial.",
+    "imagem": "imagens/anel-de-nossa-senhora-aparecida.png"
   }
 ]
