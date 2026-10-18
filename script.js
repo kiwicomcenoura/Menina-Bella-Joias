@@ -72,7 +72,17 @@ const produtos = [
     descricaoCurta: "Aliança dourada com detalhes vazados e pedrinhas brilhantes, delicada e cheia de charme para qualquer ocasião.",
     imagem: "imagens/anel-vasado-com-pedras.png",
     tamanhos: ["13",]
-  }
+  },
+  {
+  id: "A007",
+  nome: "Anel Dourado com Design de Batimentos Cardíacos",
+  categoria: "Anéis",
+  preco: 30.00,
+  descricao: "Anel dourado com design delicado e romântico, trazendo detalhes vazados inspirados no batimento cardíaco e pequenos corações. Um modelo moderno e cheio de significado, perfeito para quem ama acessórios com charme e personalidade.",
+  descricaoCurta: "Anel dourado com detalhes vazados de batimento cardíaco e corações, delicado e cheio de significado.",
+  imagem: "imagens/anel-de-coraçao-com-batidas.png",
+  tamanhos: ["16", "21"]
+}
 ];
 
 /* =========================
