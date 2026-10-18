@@ -178,5 +178,18 @@
     "descricaoCurta": "Anel dourado com imagem de Nossa Senhora Aparecida, um acessório delicado que representa fé, proteção e devoção.",
     "descricao": "Delicado e cheio de significado, este lindo anel dourado apresenta a imagem de Nossa Senhora Aparecida em destaque, envolvida por um elegante contorno oval. Seu design simboliza fé, proteção e devoção, sendo perfeito para o dia a dia ou para presentear alguém especial.",
     "imagem": "imagens/anel-de-nossa-senhora-aparecida.png"
+  },
+  {
+    "id": "A015",
+    "preco": 45.0,
+    "nome": "Kit 2 Anéis Dourados – Liso e Cravejado",
+    "categoria": "Anéis",
+    "tamanhos": [
+      "16",
+      "22"
+    ],
+    "descricaoCurta": "Kit com 2 anéis dourados, sendo um liso e outro com pedrinhas brilhantes. Elegância e delicadeza em uma combinação perfeita!",
+    "descricao": "Elegante e sofisticado, este lindo kit contém 2 anéis dourados: um modelo liso com acabamento brilhante e outro delicadamente cravejado com pedrinhas que proporcionam um toque especial de brilho. Perfeitos para usar juntos ou separadamente, combinando charme e versatilidade para qualquer ocasião.",
+    "imagem": "imagens/kit-2-anéis.png"
   }
 ]
